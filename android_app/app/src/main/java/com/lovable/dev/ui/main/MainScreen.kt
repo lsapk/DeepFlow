@@ -11,8 +11,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.lovable.dev.Greeting
 import com.lovable.dev.navigation.BottomNavItem
+import com.lovable.dev.navigation.Screen
 import com.lovable.dev.ui.main.DashboardScreen
 import com.lovable.dev.ui.main.TasksScreen
 import com.lovable.dev.ui.main.HabitsScreen
@@ -75,7 +77,18 @@ fun MainNavigationGraph(navController: NavHostController) {
             HabitsScreen()
         }
         composable(BottomNavItem.Goals.route) {
-            Greeting("Goals Content")
+            val goalsViewModel: GoalsViewModel = viewModel()
+            GoalsScreen(
+                viewModel = goalsViewModel,
+                onAddGoal = { navController.navigate(Screen.AddGoal.route) }
+            )
+        }
+        composable(Screen.AddGoal.route) {
+            val goalsViewModel: GoalsViewModel = viewModel()
+            AddGoalScreen(
+                viewModel = goalsViewModel,
+                onGoalAdded = { navController.popBackStack() }
+            )
         }
         composable(BottomNavItem.Journal.route) {
             Greeting("Journal Content")
