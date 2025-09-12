@@ -69,10 +69,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     // Supabase
-    implementation(platform("io.supabase.kt:supabase-bom:2.5.0"))
-    implementation("io.supabase.kt:gotrue-kt")
-    implementation("io.supabase.kt:postgrest-kt")
-    implementation("io.supabase.kt:realtime-kt")
+    implementation(platform("io.github.jan-tennert.supabase:bom:3.2.3"))
+    implementation("io.github.jan-tennert.supabase:gotrue-kt")
+    implementation("io.github.jan-tennert.supabase:postgrest-kt")
+    implementation("io.github.jan-tennert.supabase:realtime-kt")
 
     // Kotlinx Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
