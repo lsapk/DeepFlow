@@ -1,7 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.0.0"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
 }
 
 android {
@@ -40,9 +41,6 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
-    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -66,16 +64,15 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
     // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
     // Supabase
-    implementation(platform("io.github.jan-tennert.supabase:bom:3.2.3"))
-    implementation("io.github.jan-tennert.supabase:auth-kt")
-    implementation("io.github.jan-tennert.supabase:postgrest-kt")
-    implementation("io.github.jan-tennert.supabase:realtime-kt")
+    implementation("io.github.jan-tennert.supabase:auth-kt:3.2.3")
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:3.2.3")
+    implementation("io.github.jan-tennert.supabase:realtime-kt:3.2.3")
 
     // Kotlinx Serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
 
 
     testImplementation("junit:junit:4.13.2") 
