@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {
@@ -63,7 +63,8 @@ dependencies {
     implementation(libs.androidx.material3)
 
     // Supabase
-    implementation(libs.supabase.kt)
+    implementation(libs.supabase.gotrue)
+    implementation(libs.supabase.postgrest)
 
     // Navigation Compose
     implementation(libs.androidx.navigation.compose)
