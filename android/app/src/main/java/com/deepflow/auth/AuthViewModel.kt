@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.github.jan.supabase.SupabaseClient
 import io.github.jan.supabase.gotrue.auth
+import io.github.jan.supabase.gotrue.providers.builtin.Email
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -34,7 +35,7 @@ class AuthViewModel @Inject constructor(
         viewModelScope.launch {
             _authState.value = AuthState.Loading
             try {
-                supabaseClient.auth.signInWith(io.github.jan.supabase.gotrue.providers.builtin.Email.Provider) {
+                supabaseClient.auth.signInWith(Email) {
                     this.email = email
                     this.password = password
                 }
@@ -48,7 +49,7 @@ class AuthViewModel @Inject constructor(
         viewModelScope.launch {
             _authState.value = AuthState.Loading
             try {
-                supabaseClient.auth.signUpWith(io.github.jan.supabase.gotrue.providers.builtin.Email.Provider) {
+                supabaseClient.auth.signUpWith(Email) {
                     this.email = email
                     this.password = password
                 }
