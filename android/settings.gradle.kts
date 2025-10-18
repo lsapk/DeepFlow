@@ -10,8 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io") // Pour certaines bibliothèques comme supabase-kt
     }
 }
 
-rootProject.name = "DeepFlowNative"
+rootProject.name = "DeepFlow"
 include(":app")
