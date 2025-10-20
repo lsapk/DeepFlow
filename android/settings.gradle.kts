@@ -10,9 +10,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven("https://jitpack.io") // Pour certaines bibliothèques comme supabase-kt
     }
 }
 
-rootProject.name = "DeepFlow"
+rootProject.name = "android"
 include(":app")
+include(":capacitor-android")
+project(":capacitor-android").projectDir = file("../node_modules/@capacitor/android/capacitor")
+include(":capacitor-cordova-android-plugins")
+project(":capacitor-cordova-android-plugins").projectDir = file("capacitor-cordova-android-plugins")
