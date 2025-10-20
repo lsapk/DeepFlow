@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.deepflow"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.deepflow"
@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
+        kotlinCompilerExtensionVersion = "1.5.12"
     }
     packaging {
         resources {
@@ -63,7 +63,7 @@ dependencies {
     implementation(libs.androidx.material3)
 
     // Supabase
-    implementation("io.github.jan-tennert.supabase:postgrest-kt:2.4.0")
+    implementation(libs.supabase.gotrue)
     implementation(libs.supabase.postgrest)
 
     // Navigation Compose

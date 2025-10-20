@@ -1,6 +1,6 @@
 [versions]
-androidApplication = "8.13.0"
-jetbrainsKotlinAndroid = "1.9.22"
+androidApplication = "8.2.2"
+jetbrainsKotlinAndroid = "2.0.0"
 coreKtx = "1.12.0"
 lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
