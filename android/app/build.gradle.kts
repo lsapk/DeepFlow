@@ -63,7 +63,6 @@ dependencies {
     implementation(libs.androidx.material3)
 
     // Supabase
-    implementation(platform(libs.supabase.bom))
     implementation(libs.supabase.gotrue)
     implementation(libs.supabase.postgrest)
 

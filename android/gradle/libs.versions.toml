@@ -8,7 +8,7 @@ composeBom = "2024.02.01"
 junit = "4.13.2"
 androidxJunit = "1.1.5"
 espressoCore = "3.5.1"
-supabase = "2.4.2"
+supabase = "3.2.5"
 navigationCompose = "2.7.7"
 hilt = "2.51.1"
 hiltNavigationCompose = "1.2.0"
@@ -30,9 +30,8 @@ androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 
 # Supabase
-supabase-bom = { module = "io.github.supabase:bom", version.ref = "supabase" }
-supabase-gotrue = { module = "io.github.supabase:gotrue-kt" }
-supabase-postgrest = { module = "io.github.supabase:postgrest-kt" }
+supabase-gotrue = { module = "io.github.jan-tennert.supabase:gotrue-kt", version.ref = "supabase" }
+supabase-postgrest = { module = "io.github.jan-tennert.supabase:postgrest-kt", version.ref = "supabase" }
 
 # Navigation Compose
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
