@@ -1,5 +1,5 @@
 [versions]
-androidApplication = "8.2.2"
+androidApplication = "8.13.0"
 jetbrainsKotlinAndroid = "1.9.22"
 coreKtx = "1.12.0"
 lifecycleRuntimeKtx = "2.7.0"
