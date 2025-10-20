@@ -4,17 +4,3 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.hilt) apply false
 }
-
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
