@@ -1,0 +1,13 @@
+[versions]
+supabase = "3.2.5"
+
+[libraries]
+supabase-bom = { group = "io.github.jan-tennert.supabase", name = "bom", version.ref = "supabase" }
+supabase-gotrue = { group = "io.github.jan-tennert.supabase", name = "gotrue-kt" }
+supabase-postgrest = { group = "io.github.jan-tennert.supabase", name = "postgrest-kt" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version = "8.2.0" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version = "1.9.22" }
+hilt = { id = "com.google.dagger.hilt.android", version = "2.50" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version = "1.6.2" }
