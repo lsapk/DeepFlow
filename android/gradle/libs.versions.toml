@@ -30,9 +30,9 @@ androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 
 # Supabase
-supabase-bom = { module = "io.github.jan-tennert.supabase:bom", version.ref = "supabase" }
-supabase-gotrue = { module = "io.github.jan-tennert.supabase:gotrue-kt" }
-supabase-postgrest = { module = "io.github.jan-tennert.supabase:postgrest-kt" }
+supabase-bom = { module = "io.github.supabase:bom", version.ref = "supabase" }
+supabase-gotrue = { module = "io.github.supabase:gotrue-kt" }
+supabase-postgrest = { module = "io.github.supabase:postgrest-kt" }
 
 # Navigation Compose
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
