@@ -1,7 +1,6 @@
 [versions]
 androidApplication = "8.13.0"
 jetbrainsKotlinAndroid = "2.0.0"
-composeCompiler = "1.5.14"
 coreKtx = "1.12.0"
 lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
@@ -46,5 +45,5 @@ androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navig
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "androidApplication" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrainsKotlinAndroid" }
-composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "composeCompiler" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "jetbrainsKotlinAndroid" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
