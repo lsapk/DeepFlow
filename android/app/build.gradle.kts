@@ -61,8 +61,8 @@ dependencies {
     implementation(libs.androidx.material3)
 
     // Supabase
-    implementation(libs.supabase.gotrue)
-    implementation(libs.supabase.postgrest)
+    implementation("io.github.jan-tennert.supabase:gotrue-kt:2.6.1")
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:3.2.5")
 
     // Navigation Compose
     implementation(libs.androidx.navigation.compose)
