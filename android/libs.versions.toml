@@ -3,7 +3,7 @@ supabase = "3.2.5"
 androidApplication = "8.2.0"
 jetbrainsKotlinAndroid = "1.9.22"
 hilt = "2.50"
-composeCompiler = "1.5.8"
+composeCompiler = "1.5.10"
 
 [libraries]
 supabase-bom = { group = "io.github.jan-tennert.supabase", name = "bom", version.ref = "supabase" }
